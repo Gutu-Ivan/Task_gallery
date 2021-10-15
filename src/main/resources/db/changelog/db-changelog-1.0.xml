@@ -5,5 +5,14 @@
         xmlns:pro="http://www.liquibase.org/xml/ns/pro"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd
       http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.2.xsd">
-    <include file="db/changelog/db-changelog-1.0.xml"></include>
+    <changeSet id='1.0' author="Gutu Ivan">
+        <createTable tableName="Gallery">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"></constraints>
+            </column>
+            <column name="img" type="varchar(255)"></column>
+            <column name="created_date" type="varchar(255)"></column>
+            <column name="updated_date" type="varchar(255)"></column>
+        </createTable>
+    </changeSet>
 </databaseChangeLog>
