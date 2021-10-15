@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="gallery")
-public class GalleryModel {
+public class Gallery {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
